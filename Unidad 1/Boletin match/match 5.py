@@ -1,11 +1,11 @@
-print("Listado de habitaciones de la Casa Rural:\n")
+print("Listado de habitaciones de la Casa Rural: ")
 print("1 - Habitación Azul (2 camas, planta 1)")
 print("2 - Habitación Roja (1 cama, planta 1)")
 print("3 - Habitación Verde (3 camas, planta 2)")
 print("4 - Habitación Rosa (2 camas, planta 2)")
 print("5 - Habitación Gris (1 cama, planta 3)")
 
-numHabitacion = int(input("\nDime el número de habitación: "))
+numHabitacion = int(input("Dime el número de habitación: "))
 
 match numHabitacion:
     case 1:
