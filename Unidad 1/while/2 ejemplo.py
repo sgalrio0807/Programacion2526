@@ -4,10 +4,3 @@ while edad !=0:
 if edad <= 18 and edad > 0:
         print("Obtiene bono cultural")
 print("No obtiene bono cultural")
-
-
-
-
-
-
-
