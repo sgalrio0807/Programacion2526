@@ -1,8 +1,6 @@
-num= int(input("Dame un numero:"))
-fac= num
-for numVeces in range(num, 0, -1) :
-    print(numVeces, "*", fac)
-    fac = fac * numVeces
-    print(fac)
-print("fin")
+num = int(input("Dame un número: "))
+
+for i in range(1, num + 1):
+    print('*' * i)
+
 
