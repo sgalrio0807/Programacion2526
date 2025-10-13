@@ -1,8 +1,9 @@
-num= int(input("Dame un numero de 5 cifras: "))
+numero = int(input("Dame un número:"))
+while numero >0:
+    resultadoresto = numero % 10
+    print(resultadoresto)
+    numero = numero // 10
 
-while num != 0:
-    suma = 
-    print(suma)
-    
-    
-        
+
+
+
