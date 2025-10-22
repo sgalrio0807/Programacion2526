@@ -7,4 +7,4 @@ print(lista)
 listainversa= []
 for elemento in range(len(lista), 0, -1):
     listainversa.append(elemento)
-print(listainversa)
+print(listainversa) 
