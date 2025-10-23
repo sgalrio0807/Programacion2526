@@ -10,14 +10,14 @@ num9= int(input("Dime el noveno número: "))
 num10= int(input("Dime el décimo número: "))
 
 numeros= [num1, num2, num3, num4, num5, num6, num7, num8, num9, num10]
-maximo= numeros [-1]
+maximo= numeros [0]
 minimo= numeros [0]
 numeros.sort()  # Para ordenar de menor a mayor
 
 for i in numeros:
-    if i == maximo:
+    if i > maximo:
         print(i, "maximo")
-    elif i == minimo:
+    elif i < minimo:
         print(i, "minimo")
     else:
         print(i)
