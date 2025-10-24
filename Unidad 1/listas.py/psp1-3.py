@@ -11,7 +11,7 @@ listageneros= []
 while menu not in ["r", "e", "s"]:
     menu= input("Seleccione una opción de el programa: ").lower()
 
-while menu == "r":
+while menu == "r": 
     numveces= int(input("Cuántos juegos quiere registrar: "))
     for i in range(numveces):
         nombres= input("Dime el nombre del juego: ")
