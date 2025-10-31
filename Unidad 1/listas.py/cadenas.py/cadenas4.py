@@ -1,12 +1,10 @@
-num= int(input("Dame un número: "))
+num= input("Dame un número: ")
+salida = ""
 posicion= int(input("¿Que posición quieres ver?: "))
 
-for num in range:
-    print (num[0:-1])
+if posicion < len(num):
+    print(num[posicion])
+else:
+    print("Posición incorrecta")
     
 
-
-
-#for valor in num: 
-    #cadena = cadena + valor
-#print(cadena)
