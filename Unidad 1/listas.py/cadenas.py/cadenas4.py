@@ -1,13 +1,12 @@
 num= int(input("Dame un número: "))
 posicion= int(input("¿Que posición quieres ver?: "))
-lista= []
-lista.append(num)
 
-while num != 0:
-    lista.append(1)
-    num = num // 10
+for num in range:
+    print (num[0:-1])
+    
 
-if lista == []:
-    lista.append(1)
-lista.pop(0)
-print(lista)
+
+
+#for valor in num: 
+    #cadena = cadena + valor
+#print(cadena)
