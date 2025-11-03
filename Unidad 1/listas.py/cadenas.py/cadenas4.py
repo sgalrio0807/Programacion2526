@@ -1,10 +1,8 @@
 num= input("Dame un número: ")
-salida = ""
-posicion= int(input("¿Que posición quieres ver?: "))
+posicion= input("¿Que dígito quieres ver?: ")
 
-if posicion < len(num):
-    print(num[posicion])
+if posicion in num:
+    print("La posición de la primera ocurrencia es:", num.index(posicion))
 else:
-    print("Posición incorrecta")
-    
+    print(-1)
 
