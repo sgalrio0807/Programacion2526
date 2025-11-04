@@ -1,4 +1,12 @@
-numentero = input("Dime un numero: ")
-if len(numentero)>3:
-    for i in range(-3, -1, -3):
-        print(numentero[i:len(numentero)]-i)
+numero = input("Dime un número entero: ")
+contador = 0
+resultado = ""
+
+for i in numero[::-1]:
+    if contador == 3:
+        resultado = "." + resultado
+        contador = 0
+    resultado = i + resultado
+    contador += 1
+
+print(resultado)
