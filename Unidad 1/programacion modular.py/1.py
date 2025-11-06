@@ -18,3 +18,4 @@ elif num % 7 == 0:
 
 else:
     print("Este número no es válido")
+

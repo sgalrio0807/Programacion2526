@@ -16,3 +16,8 @@ print(numero, esPar)
 esPar = compruebasiespar(32)
 
 print("32", esPar)
+
+
+#def calculacadena(posic1,posic2,num):
+    #salida=num[posic1]+num[posic2]
+    #print(salida)
