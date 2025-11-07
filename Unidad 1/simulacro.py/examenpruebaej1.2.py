@@ -26,5 +26,7 @@ while incidente == "s":
 if incidentes > 0:
     porcentaje_eso = (eso / incidentes) * 100
     porcentaje_post = (post / incidentes) * 100
+    print("Se han producido", incidentes, "incidentes en el centro:", leves, "de ellos Leves y", graves, "de ellos graves, siendo el", porcentaje_eso, "% en ESO y el", porcentaje_post, "% en Post-Obligatoria.")
 
-print("Se han producido", incidentes, "incidentes en el centro:", leves, "de ellos Leves y", graves, ", siendo el", porcentaje_eso, "% en ESO y el", porcentaje_post, "% en Post-Obligatoria.")
+else:
+    print("Ninguna incidencia registrada.")

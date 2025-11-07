@@ -1,0 +1,1 @@
+def calculaTemperaturaMedia (min, max)
