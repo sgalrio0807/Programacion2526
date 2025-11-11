@@ -2,7 +2,7 @@ jug1 = input("Jugador 1: Pares o nones?: ")
 jug2 = input("Jugador 2: Pares o nones?: ")
 dedos1 = int(input("Jugador 1: Cuántos dedos sacas?: "))
 import random
-dedos2 = random.randint(0,20)
+dedos2 = random.randint(0,10)
 
 victoriasjug1 = 0
 victoriasjug2 = 0
@@ -29,6 +29,6 @@ while dedos1 != 0 and dedos2 != 0:
     jug1 = input("Jugador 1: Pares o nones?: ")
     jug2 = input("Jugador 2: Pares o nones?: ")
     dedos1 = int(input("Jugador 1: Cuántos dedos sacas?: "))
-    dedos2 = random.randint(0,20)
+    dedos2 = random.randint(0,10)
 
 print("El jugador 1 ha ganado",victoriasjug1,"partidas y el jugador 2 ha ganado",victoriasjug2,"partidas.")
