@@ -13,7 +13,6 @@ listatipoarbol = []
 
 contador = 0
 
-
 while menu == "a": 
     numArboles = int(input("Introduzca el número de árboles: "))
     listanumArboles.append(numArboles)

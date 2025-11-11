@@ -15,7 +15,11 @@ seleccion = input("Selecciona una opción: ")
 while seleccion != "s":
     if seleccion == "e":
         primeraletra = []
+        palabrasinrepetir = []
         for palabra in listaPalabras:
+            if palabra not in palabrasinrepetir:
+                palabrasinrepetir.append(palabra)
+        for palabra in palabrasinrepetir:
             if palabra[0] == letra:
                 primeraletra.append(palabra)
         print (primeraletra)
@@ -24,7 +28,11 @@ while seleccion != "s":
 
     if seleccion == "c":
         contieneletra = []
+        palabrasinrepetir = []
         for palabra in listaPalabras:
+            if palabra not in palabrasinrepetir:
+                palabrasinrepetir.append(palabra)
+        for palabra in palabrasinrepetir:
             if letra in palabra:
                 contieneletra.append(palabra)
         print (contieneletra)
