@@ -26,6 +26,7 @@ opcion = input("Introduce una opción: ").lower()
 if opcion == "s":
     resta = (nummax - sumaprecios)
     print("La resta entre numero maximo a gastar y suma de los precios es", resta)
+    
 elif opcion == "r":
     productos = input("Introduce un producto: ").lower()
     print(listaproductos,",",listaprecios)
