@@ -1,11 +1,13 @@
 nummax = float(input("Introduce el dinero maximo que se quiere gastar en la compra: "))
 productos = input("Introduce un producto: ").lower()
 precio = float(input("Introduce el precio del producto: "))
+
+listaproductos = []
+listaprecios = []
+listaimporte = []
+sumaprecios = 0
+
 def cargacesta(nummax):
-    listaproductos = []
-    listaprecios = []
-    listaimporte = []
-    sumaprecios = 0
 
     while sumaprecios <= nummax:
         listaprecios.append(precio)
@@ -40,6 +42,25 @@ def pintamenu():
     return pintamenu
 
 resultado = pintamenu()
+
+def sobrante():
+    resta = (nummax - sumaprecios)
+    print("La resta entre numero maximo a gastar y suma de los precios es", resta)
+    return resta
+
+def eliminarproducto():
+    productos = input("Introduce un producto: ").lower()
+    print(listaproductos,",",listaprecios)
+    seguro= input("Estas seguro/a(S/N):").lower()
+    if seguro == "s":
+            listaproductos.remove(productos)
+    return listaproductos
+
+def productoscaros():
+    importe = float(input("Introduce importe: "))
+    if listaprecios > importe:
+        listaimporte.append(productos)
+    return listaimporte
 
 #pedir_productosyprecios
 #almacenar_listas
