@@ -1,18 +1,15 @@
-numeros = input("Introduce numero: ")
-
-def cargaelementos(numeros):
+def cargaelementos():
+    esnumero = True
     listaelementos = []
-    while True:
-        esnumero = True
+    while esnumero:
+        numeros = input("Introduce numero: ")   
         for i in numeros:
             if i not in "0123456789":
                 esnumero = False
-
-        if not esnumero:   
-            return listaelementos
-
-        listaelementos.append(int(numeros))  
-        numeros = input("Introduce numero: ")
+        if esnumero:   
+            listaelementos.append(int(numeros))  
+     
+    return listaelementos
 
 def estaordenadaascendentemente(lista):
     orden = True
@@ -29,10 +26,10 @@ def estaordenada(lista, ascendente):
     else: 
         print("No está ordenada ascendentemente")
 
-lista = cargaelementos(numeros)
-print(lista)
-ascendente = estaordenadaascendentemente(lista)
-estaordenada(lista, ascendente)
+lista1 = cargaelementos()
+print(lista1)
+ascendente = estaordenadaascendentemente(lista1)
+estaordenada(lista1, ascendente)
 
 
 

@@ -1,3 +1,4 @@
+numcadenas = int(input("¿Cuántas cadenas quieres introducir?: "))
 def cargarcadenas(numcadenas):
     lista = []
     i = 0
@@ -16,9 +17,8 @@ def eliminarduplicados(lista):
         i = i + 1
     return listasinduplicados
 
-numcadenas = int(input("¿Cuántas cadenas quieres introducir?: "))
 lista = cargarcadenas(numcadenas)
 print("Lista original:", lista)
 
-listaunica = eliminarduplicados(lista)
-print("Lista sin duplicados:", listaunica)
+listaeliminada = eliminarduplicados(lista)
+print("Lista sin duplicados:", listaeliminada)
