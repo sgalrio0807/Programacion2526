@@ -11,9 +11,12 @@ def damefila(matriz):
     return fila
 
 def damecolumna(matriz):
-    columna = [matriz[0][numcolumna], matriz[1][numcolumna], matriz[2][numcolumna]]
-    return columna
-
+    lista = []
+    for i in range(0,len(matriz)):
+        columnacompleta = matriz[i][numcolumna]
+        lista.append(columnacompleta)
+    return lista
+        
 elemento = dameelemento(matriz)
 print(elemento)
 
