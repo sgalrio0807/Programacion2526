@@ -14,13 +14,11 @@ def calculamediafila(matriz):
         listaMedias.append(media_fila)
     return listaMedias
 
-def calculaMediaColumna0(matriz):
+def calculaMediaColumna0(numColumna,matriz):
     columna0 = []
-    media = 0
-    for i in range(0,len(matriz)):
-        media = media + i
-        media = media / len(matriz)
-    return media
+    for i in range(len(matriz)):
+        columna0.append(matriz[i][numColumna])
+    return columna0
 
 lista_numeros = matriz[0]
 mediamatriz = calcularmedia(lista_numeros)
@@ -29,5 +27,6 @@ print(mediamatriz)
 listaMedias = calculamediafila(matriz)
 print(listaMedias)
 
-mediacolumna0 = calculaMediaColumna0(matriz)
-print(mediacolumna0)
+mediacolumna0 = calculaMediaColumna0(0,matriz)
+media = calcularmedia(mediacolumna0)
+print(media)
