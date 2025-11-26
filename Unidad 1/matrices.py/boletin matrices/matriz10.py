@@ -12,8 +12,15 @@ def devuelveDiagonalSecundaria(matriz):
         diagonalsecundaria.append(matriz[i][-1 - i])
     return diagonalsecundaria
 
+def compruebasiescuadrada(matriz):
+    numfilas = len(matriz)
+    numcolumnas = len(matriz[0])
+    return numfilas == numcolumnas
+
 diagprincipal = devuelveDiagonalPrincipal(matriz)
 diagsecundaria = devuelveDiagonalSecundaria(matriz)
+cuadrada = compruebasiescuadrada(matriz)
 
 print (diagprincipal)
 print(diagsecundaria)
+print(cuadrada)
