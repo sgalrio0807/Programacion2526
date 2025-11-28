@@ -1,13 +1,17 @@
 filas = 4
 columnas = 5
-matriz = []
 
-for i in range(filas):  
-    fila = []
-    for columna in range(columnas): 
-        fila.append(i + columna)
-    matriz.append(fila)
+def generamatriz(filas, columnas):
+    matriz = []
+    for i in range(filas):  
+        fila = []
+        for columna in range(columnas): 
+            fila.append(i + columna)
+        matriz.append(fila)
+    
+    return matriz
 
-print(matriz)
+matrizcompleta = generamatriz( filas, columnas)
+print (matrizcompleta)
 
 

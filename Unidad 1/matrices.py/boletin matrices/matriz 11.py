@@ -17,7 +17,7 @@ def devuelvesumaelementos(matriz, esprincipal):
         diagonal = devuelveDiagonal1(matriz) 
     else:
         diagonal = devuelveDiagonal2(matriz)
-    
+
     suma = 0
     for numero in diagonal:
         suma += numero
