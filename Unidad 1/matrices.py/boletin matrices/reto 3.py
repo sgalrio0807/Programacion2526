@@ -40,6 +40,25 @@ def esProductosDestacados(ventas):
            lista.append(elemento)
     return lista
 
+def tieneMayorIngreso(nombreproducto1, nombreproducto2):
+    fila1 = getProducto(ventas, nombreproducto1)
+    fila2 = getProducto(ventas, nombreproducto2)
+
+    ingresos1 = calcularIngresos(fila1)
+    ingresos2 = calcularIngresos(fila2)
+
+    return ingresos1 >= ingresos2
+
+def calcular_ingresosTotales(ventas):
+    suma = 0
+    lista = []
+    for fila in ventas:
+        multiplicacion = fila[1] * fila[2]
+        suma += multiplicacion
+        lista.append(suma)
+    return (lista[-1])
+
+
 filaProducto = getProducto(ventas, "Consola")
 print(filaProducto)
 filaProducto = getProducto(ventas, "Tomate")
@@ -56,3 +75,11 @@ esDestacado = productoDestacado(ventas, "Tomate")
 print(esDestacado)
 lista = esProductosDestacados(ventas)
 print(lista)
+mayoringreso = tieneMayorIngreso("Consola","Tablet")
+print(mayoringreso)
+sumatotal = calcular_ingresosTotales(ventas)
+print(sumatotal)
+
+assert tieneMayorIngreso("Smartphone", "Auriculares") == True
+assert tieneMayorIngreso("Portátil", "Smartphone") == False
+assert calcular_ingresosTotales(ventas) == 612977.4
