@@ -11,7 +11,7 @@ def son_iguales(lista_numeros):
             iguales = False
         else:
              i = i + 1
-    return iguales
+    return iguales   
 
 def suma_lista_numeros(lista_numeros):
         suma_fila = 0
