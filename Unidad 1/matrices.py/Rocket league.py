@@ -4,7 +4,7 @@ def pintaMenu():
     print ("C) Clasificados por fase")
     print ("S) Salir")
     opcion = input("Selecciona una opción del menú: ").lower()
-    while opcion not in ("r", "l", "c", "s"):
+    while opcion not in ("r", "l", "c"):
         print("Opcion incorrecta")
         opcion = input("Selecciona otra opción del menú: ").lower()
     return opcion
