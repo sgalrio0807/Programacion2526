@@ -1,0 +1,40 @@
+import random
+def pintamenu():
+    print("=============================")
+    print("  SOMBRERO SELECCIONADOR")
+    print("=============================")
+    print("1. Seleccionar casa para un alumno")
+    print("2. Mostrar estadísticas")
+    print("Elige una opción. Si quieres salir del programa, escribe la opción 1 y el nombre del personaje innombrable")
+
+def eligeopcion():
+    menu = pintamenu()
+    opcion = input("Introduce una opción del menú: ")
+    while opcion != "1" and opcion != "2":
+        opcion = input("Opción incorrecta, introduce una opción del menú: ")
+
+    if opcion == "1":
+        print("Ejecutando y seleccionando casa")
+    else:
+        print("Ejecutando y mostrar estadísticas")
+    return opcion
+
+def opcion1():
+    aleatorio = random.randint(1,4)
+    nombre = input("Introduce tu nombre: ")
+    match aleatorio:
+        case 1:
+            aleatorio = "Gryffindor"
+        case 2:
+            aleatorio = "Slytherin" 
+        case 3:
+            aleatorio = "Hufflepuff" 
+        case 4:
+            aleatorio = "Ravenclaw" 
+    return ("El Sombrero dice que", nombre, "pertenece a", aleatorio)
+
+opcion = eligeopcion()
+print(opcion)
+
+if opcion == "1":
+    print(opcion1())

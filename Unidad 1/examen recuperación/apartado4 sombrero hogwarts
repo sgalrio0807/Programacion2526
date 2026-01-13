@@ -1,0 +1,66 @@
+import random
+def pintamenu():
+    print("=============================")
+    print("  SOMBRERO SELECCIONADOR")
+    print("=============================")
+    print("1. Seleccionar casa para un alumno")
+    print("2. Mostrar estadísticas")
+    print("Elige una opción. Si quieres salir del programa, escribe la opción 1 y el nombre del personaje innombrable")
+
+def eligeopcion():
+    menu = pintamenu()
+    opcion = input("Introduce una opción del menú: ")
+    while opcion != "1" and opcion != "2":
+        opcion = input("Opción incorrecta, introduce una opción del menú: ")
+
+    if opcion == "1":
+        print("Ejecutando y seleccionando casa")
+    else:
+        print("Ejecutando y mostrar estadísticas")
+    return opcion
+
+def opcion1(contadoralumno, contador1, contador2, contador3, contador4):
+    nombre = input("Introduce tu nombre: ")
+    while nombre != "Voldemort":
+        contadoralumno += 1
+        aleatorio = random.randint(1,4)
+        match aleatorio:
+            case 1:
+                aleatorio = "Gryffindor"
+                contador1 += 1
+            case 2:
+                aleatorio = "Slytherin"
+                contador2 += 1 
+            case 3:
+                aleatorio = "Hufflepuff" 
+                contador3 += 1
+            case 4:
+                aleatorio = "Ravenclaw" 
+                contador4 += 1
+        print(("El Sombrero dice que", nombre, "pertenece a", aleatorio))
+        nombre = input("Introduce otro nombre: ")
+    print("Apparition, transpórtame a otro sitio")
+
+    return contadoralumno, contador1, contador2, contador3, contador4
+
+def mostrarestadisticas(contadoralumno, contador1, contador2, contador3, contador4):
+    print("Total de alumnos:", contadoralumno)
+    print("Gryffindor:", contador1)
+    print("Slytherin:", contador2)
+    print("Hufflepuff:", contador3)
+    print("Ravenclaw:", contador4)
+
+opcion = eligeopcion()
+print(opcion)
+
+contadoralumno = 0
+contador1 = 0
+contador2 = 0
+contador3 = 0
+contador4 = 0
+
+if opcion == "1":
+    contadoralumno, contador1, contador2, contador3, contador4 = opcion1(
+        contadoralumno, contador1, contador2, contador3, contador4)
+elif opcion == "2":
+    mostrarestadisticas(contadoralumno, contador1, contador2, contador3, contador4)
